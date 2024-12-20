@@ -81,6 +81,7 @@ nav {
 
 .hideIt {
     color: white;
+    border: none;
     position: absolute;
     right: 100px;
     bottom: 50px;
@@ -194,4 +195,24 @@ nav {
     overflow: hidden;
     align-items: center;
     box-shadow: 2px 2px 4px black;
+  }
+
+  .buildingRibbon h1 {
+    /* animation: shiftText 60s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite; */
+    animation: shiftText 5s linear infinite;
+  }
+
+  @keyframes shiftText {
+    0% {
+        transform: translate(0,0);
+    }
+    33% {
+        transform: translate(-10%, 0);
+    }
+    66% {
+        transform: translate(10%, 0);
+    }
+    100% {
+        transform: translate(0,0);
+    }
   }
