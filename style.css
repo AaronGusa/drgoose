@@ -73,6 +73,16 @@ nav {
     justify-content: space-between;
     overflow: hidden;
     padding: .5rem;
+    align-items: center;
+}
+
+.headTitle {
+    font-size: 4rem;
+}
+
+.headTagline {
+    font-size: 3rem;
+
 }
 
 .box {
@@ -165,6 +175,30 @@ nav {
 
   .buildingRibbon {
     display: none;
+  }
+
+  .drGooseImg {
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+  }
+
+  .navTableUl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    justify-content: space-between;
+  }
+
+  .navTableUl {
+
+  }
+
+  .navTableUl li {
+    font-style: none;
+    list-style: none;
+    padding: 1rem;
   }
 
 
