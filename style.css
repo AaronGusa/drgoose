@@ -37,6 +37,10 @@ h1, h2, h3, h4, h5, h6 {
     position: 0;
 }
 
+.padding5 {
+    padding: .5rem;
+}
+
 .badge {
     position: relative;
     width: 400px;
@@ -93,36 +97,7 @@ nav {
     height: 100px;
     width: auto;
 }
-/*
-.constructDiv {
-    height: 80vh;
-    border: 2px solid black;
-    display: grid;
-    place-items: center;
-    text-align: center;
-}
 
- #constructionText {
-    height: 160px;
-    font-size: 20px;
-    animation: animate 25s linear infinite;
-}
-
-@keyframes animate {
-    from {
-        transform: rotate(0deg); 
-    } to {
-        transform: rotate(360deg);
-    }
-} 
-
-#constructionText span {
-    position: absolute;
-    left: 50%;
-    font-size: 1.2rem;
-    transform-origin: 0 150px;
-
-} */
 
 .constructDiv {
     height: 80vh;
@@ -200,6 +175,7 @@ nav {
   .buildingRibbon h1 {
     /* animation: shiftText 60s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite; */
     animation: shiftText 5s linear infinite;
+    overflow: hidden;
   }
 
   @keyframes shiftText {
