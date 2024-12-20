@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Rusty', sans-serif;
     padding: 0;
@@ -14,7 +20,6 @@ html {
 body {
     width: auto;
     height: 100%;
-    overflow: hidden;
     background-image: url('/assets/bckgrnd.png');
     background-position: top;
     /* background-size: cover; */
@@ -32,10 +37,31 @@ h1, h2, h3, h4, h5, h6 {
     position: 0;
 }
 
+.badge {
+    position: relative;
+    width: 400px;
+    border-radius: 50%;
+    transform: rotate(-50deg);
+  }
+
+h1 span {
+    font: 26px Monaco, MonoSpace;
+    height: 200px;
+    position: absolute;
+    width: 20px;
+    left: 50%;
+    top: 50%;
+    transform-origin: bottom center;
+    transform: rotate(10deg);
+  }
+
 nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    overflow: hidden;
+    padding: .5rem;
 }
 
 .box {
@@ -61,3 +87,110 @@ nav {
     text-decoration: none;
     text-shadow: 2px 2px 5px rgb(0, 0, 49);
 }
+
+.navImg {
+    height: 100px;
+    width: auto;
+}
+/*
+.constructDiv {
+    height: 80vh;
+    border: 2px solid black;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+ #constructionText {
+    height: 160px;
+    font-size: 20px;
+    animation: animate 25s linear infinite;
+}
+
+@keyframes animate {
+    from {
+        transform: rotate(0deg); 
+    } to {
+        transform: rotate(360deg);
+    }
+} 
+
+#constructionText span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.2rem;
+    transform-origin: 0 150px;
+
+} */
+
+.constructDiv {
+    height: 80vh;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    text-align: center;
+  }
+
+  .constructSubDiv {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: #fafafa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 0px 20px black;
+        z-index: 100;
+        box-shadow: 2px 2px 15px rgb(56, 47, 37);
+        grid-column: 1;
+        grid-row: 1;
+  }
+  
+  .constructionText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 30s linear infinite;
+  }
+  
+  @keyframes rotateText {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .constructionText span {
+    position: absolute;
+    left: 50%;
+    font-size: 3em;
+    transform-origin: 0 250px;
+    z-index: 100;
+  }
+
+  .constructImg {
+    position: absolute;
+    z-index: 1;
+    height: 82%;
+    width: auto;
+  }
+
+  .buildingRibbon {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: yellow;
+    width: 100%;
+    height: 200px;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    align-items: center;
+  }
