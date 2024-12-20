@@ -193,4 +193,5 @@ nav {
     justify-content: space-evenly;
     overflow: hidden;
     align-items: center;
+    box-shadow: 2px 2px 4px black;
   }
