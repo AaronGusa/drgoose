@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Rusty';
+    src: url('/assets/RustyHooks.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Rusty', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    background-image: url('/assets/bckgrnd.png');
+    background-position: top;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-color: rgb(235, 229, 223);
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    position: 0;
+}
+
+nav {
+    display: flex;
+    
+}
+
+.box {
+    background: linear-gradient(orange, navy);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 5px black;
+}
+
+.box:hover {
+    rotate: 1080deg;
+}
+
+
+
+.hideIt {
+    color: white;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(0, 0, 49);
+}
