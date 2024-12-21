@@ -107,7 +107,7 @@ nav {
     right: 100px;
     bottom: 50px;
     text-decoration: none;
-    text-shadow: 2px 2px 5px rgb(0, 0, 49);
+    /* text-shadow: 2px 2px 5px rgb(0, 0, 49); */
 }
 
 .navImg {
