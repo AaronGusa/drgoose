@@ -76,6 +76,15 @@ nav {
     align-items: center;
 }
 
+/*  UNIVERSALS */
+.flexBocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .headTitle {
     font-size: 4rem;
 }
@@ -392,5 +401,41 @@ nav {
     100% {
         transform: translate(0,0);
     }
+  }
+
+  /* .imageFlip:hover {
+    -webkit-transform: scaleX(-1);
+    animation: flipImages 2s ease-in-out;
+
+    animation: flipImages 5s ease-in infinite; 
+  }
+
+  @keyframes flipImages {
+    0% {
+      transform: scaleX(1)
+    }
+    25% {
+      transform: scaleX(-1)
+    }
+    50% {
+      transform: scaleX(1)
+    }
+    75% {
+      transform: scaleX(-1)
+    }
+    100% {
+      transform: scaleX(1)
+    }
+  } */
+
+  .imageflip {
+    transition: transform 0.3s ease-in-out;
+    width: 50%;
+    height: 50%;
+    transform: scaleX(1);
+  }
+
+  .imageflip:hover {
+    transform: scaleX(4);
   }
 }
