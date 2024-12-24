@@ -428,14 +428,16 @@ nav {
     }
   } */
 
-  .imageflip {
-    transition: transform 0.3s ease-in-out;
+  .imageFlip {
     width: 50%;
     height: 50%;
     transform: scaleX(1);
+    transition: transform 0.3s ease-in-out;
+
   }
 
-  .imageflip:hover {
-    transform: scaleX(4);
+  .imageFlip:hover {
+
+    transform: scaleX(-1);
   }
 }
