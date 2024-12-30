@@ -43,7 +43,7 @@
   
 }
 
-nav {
+nav, footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -51,6 +51,7 @@ nav {
   overflow: hidden;
   padding: .5rem;
   align-items: center;
+  background-color: white;
 }
 
 /*  UNIVERSALS */
