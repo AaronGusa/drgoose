@@ -33,6 +33,8 @@
     box-sizing: border-box;
 }
 
+
+
 .fader {
   animation: fader-in linear;
   animation-timeline: view();
@@ -54,7 +56,51 @@ nav, footer {
   background-color: white;
 }
 
-/*  UNIVERSALS */
+/*  UNIVERSALS ====================================================================================================*/ 
+/* PARALLAX */
+.parallax {
+  background-image: url("/assets/images/optimized/bckgrnd.webp");
+
+  filter: saturate(175%);
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.parallax1 {
+  background-image: url('/assets/images/optimized/bear.webp');
+  min-height: 400px;
+  /* filter: saturate(175%); */
+
+}
+
+
+
+.parallax1, .parallax2, .parallax3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  filter: invert(25%);
+}
+
+/* Parallax END */
+
 .flexBocks {
 display: flex;
 flex-direction: row;
@@ -278,7 +324,7 @@ h1 span {
 body {
     width: 100%;
     height: 100%;
-    background-image: url('/assets/images/optimized/back.webp'); 
+    /* background-image: url('/assets/images/optimized/back.webp');  */
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: top;
