@@ -58,6 +58,13 @@ nav, footer {
 
 /*  UNIVERSALS ====================================================================================================*/ 
 /* PARALLAX */
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
 .parallax {
   background-image: url("/assets/images/optimized/bckgrnd.webp");
 
