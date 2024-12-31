@@ -29,8 +29,9 @@
 
 * {
 	margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 
@@ -53,7 +54,11 @@ nav, footer {
   overflow: hidden;
   padding: .5rem;
   align-items: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+footer {
+  opacity: 60%;
 }
 
 /*  UNIVERSALS ====================================================================================================*/ 
@@ -81,7 +86,7 @@ nav, footer {
 
 .parallax1 {
   background-image: url('/assets/images/optimized/bear.webp');
-  min-height: 400px;
+  min-height: 500px;
   /* filter: saturate(175%); */
 
 }
