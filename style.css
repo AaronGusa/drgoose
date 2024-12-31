@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'Rusty';
-    src: url('/assets/RustyHooks.ttf') format('truetype');
+    src: url('/assets/fonts/RustyHooks.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
   font-family: 'SunnySpells';
-  src: url('/assets/SunnySpells.ttf') format('truetype');
+  src: url('/assets/fonts/SunnySpells.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SunnySpellsBasic';
-  src: url('/assets/SunnySpellsBasic.ttf') format('truetype');
+  src: url('/assets/fonts/SunnySpellsBasic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Comfortaa';
-  src: url('/assets/Comfortaa-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/Comfortaa-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -278,7 +278,7 @@ h1 span {
 body {
     width: 100%;
     height: 100%;
-    background-image: url('/assets/back.png'); 
+    background-image: url('/assets/images/optimized/back.webp'); 
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: top;
