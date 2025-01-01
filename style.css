@@ -26,6 +26,36 @@
   font-style: normal;
 }
 
+.fontWave {
+  background: linear-gradient(125deg, #000000, rgb(83, 41, 83), #3ac4cc, #4e924c,rgb(177, 138, 9), #ff0000, white);
+  background-size: 600% 600%;
+
+  -webkit-animation: wave 17s ease infinite;
+  animation: wave 17s ease infinite;
+  box-shadow: 2px 2px 5px black;
+}
+
+@-webkit-keyframes wave {
+  0%{background-position:0% 15%}
+  50%{background-position:100% 86%}
+  100%{background-position:0% 15%}
+}
+@keyframes wave {
+  0%{background-position:0% 15%}
+  50%{background-position:100% 86%}
+  100%{background-position:0% 15%}
+}
+
+.fontWaveText {
+  color: rgb(255,0,0);
+  mix-blend-mode: difference;
+}
+
+.fontWaveText:after {
+  color: rgb(0,255,255);
+  mix-blend-mode: darken;
+}
+
 
 * {
 	margin: 0;
@@ -61,6 +91,67 @@ footer {
 }
 
 /*  UNIVERSALS ====================================================================================================*/ 
+/*  BUTTON  */
+button {
+  border-radius: 50px;
+  padding: 2rem;
+  transition: 0.5s;
+  background: rgb(255, 210, 112);
+}
+
+button:hover{
+  background: #fffdf0;
+  color: #8b6e0c;
+  box-shadow: 0 0 5px #ffe600,
+              0 0 25px #fffc4b,
+              0 0 50px #ffe988,
+              0 0 200px #ffeea3;
+  animation: rotate 0.7s ease-in-out both;
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+  border: 3px #f7c31b;
+   /* -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); */
+}
+
+button h2 {
+  font-family: 'Rusty', sans-serif;
+  font-size: 1.5rem;
+}
+
+button:active {
+  background: #f7c31b;
+  filter: saturate(200%);
+  box-shadow: 0 0 50px #ffe600,
+              0 0 150px #fffc4b,
+              0 0 250px #ffe988,
+              0 0 700px #ffeea3;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg) translate3d(0, 0, 0)}
+    25%
+        {transform: rotate(3deg) translate3d(0, 0, 0)}
+    50%
+        {transform: rotate(-3deg) translate3d(0, 0, 0)}
+    75%
+        {transform: rotate(1deg) translate3d(0, 0, 0)}
+    100%
+        {transform: rotate(0deg) translate3d(0, 0, 0)}
+  }
+
+  @keyframes storm {
+    0%
+        {transform: translate3d( 0, 0, 0) translateZ(0)}
+    25%
+        {transform: translate3d( 0, 4px,  0) translateZ(0)}
+    50%
+        {transform: translate3d( -3px, 0, 0) translateZ(0)}
+    75%
+        {transform: translate3d( 0, 2px, 0) translateZ(0)}
+    100%
+        {transform: translate3d( 0, 0, 0) translateZ(0)}
+}
+
 /* PARALLAX */
 
 @media only screen and (max-device-width: 1366px) {
@@ -83,7 +174,7 @@ footer {
 
 
 .parallax1 {
-  background-image: url('/assets/images/bear.webp');
+  background-image: url('/assets/images/bearLG.webp');
   min-height: 600px;
   width: auto;
   background-size: 30%;
@@ -93,7 +184,7 @@ footer {
 }
 
 .parallax2 {
-  background-image: url('/assets/images/owlfam.webp');
+  background-image: url('/assets/images/owlfamLG.webp');
   min-height: 600px;
   background-size: 50%;
 }
@@ -145,6 +236,18 @@ footer {
 
 .cardA {
   text-decoration: none;
+  scale: 100%;
+  filter: saturate();
+  transition: all 0.15s ease-in-out;
+}
+
+.cardA:hover {
+  scale: 105%;
+  filter: saturate(150%);
+}
+
+.cardA:active {
+  filter: grayscale(60%);
 }
 
 .cardImgCont {
@@ -154,7 +257,7 @@ footer {
 }
 
 .cardImg1 {
-  background-color: ;
+  background-color: #fcedcd;
 }
 
 .cardP {
@@ -667,9 +770,13 @@ nav {
   .content1 div h1 {
     font-size: 8rem;
     /* background: linear-gradient(to bottom, rgb(44, 143, 97), rgb(65, 195, 228)); */
-    background: linear-gradient(to bottom, rgb(44, 143, 97), rgb(7, 200, 248));
+    background: linear-gradient(to bottom, rgb(44, 143, 97), rgb(13, 53, 58));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .content2 {
+    text-align: center;
   }
 
   .content1 {
