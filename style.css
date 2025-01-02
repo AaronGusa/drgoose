@@ -145,7 +145,7 @@ button:active {
     25%
         {transform: translate3d( 0, 4px,  0) translateZ(0)}
     50%
-        {transform: translate3d( -3px, 0, 0) translateZ(0)}
+        {transform: translate3d(  0,-3px, 0) translateZ(0)}
     75%
         {transform: translate3d( 0, 2px, 0) translateZ(0)}
     100%
@@ -293,6 +293,9 @@ button:active {
 
 
 /* Cards END */
+.padIt {
+  padding: 0 1rem;
+}
 
 .flexBocks {
 display: flex;
@@ -302,6 +305,7 @@ justify-content: space-around;
 align-items: center;
 min-height: 350px;
 box-shadow: 2px 2px 15px black;
+padding: 1rem;
 }
 
 .headTitle {
@@ -766,6 +770,7 @@ nav {
     
     text-align: center;
   }
+
 
   .content1 div h1 {
     font-size: 8rem;
