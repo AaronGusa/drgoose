@@ -258,7 +258,7 @@ a:active {
     width: 100%;
     backdrop-filter: blur(4px);
   }
-  
+
   nav {
     display: flex;
     flex-direction: column;
@@ -274,8 +274,15 @@ a:active {
 
   /* Header Nav Alphabetically Ordered */
 
-  .backWhite {
-    background-color: rgba(255, 255, 255, 1);
+  .backWhiteUp {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0));
+    /* background: linear-gradient(to bottom, rgb(44, 143, 97), rgb(65, 195, 228)); */
+
+  }
+
+  .backWhiteDown {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 10%, rgba(255, 255, 255, 0));
+
   }
 
   .content1 div h1{
@@ -284,7 +291,7 @@ a:active {
     background: linear-gradient(to bottom, rgb(44, 143, 97), rgb(65, 195, 228));
     /* background: linear-gradient(to top, rgb(255, 80, 37), rgb(138, 101, 1)); */
     background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     /* color: #fff45d; */
     /* mix-blend-mode: difference; */
   }
@@ -292,12 +299,18 @@ a:active {
   .content1 div h1:after {
     color: rgb(107, 221, 54);
     mix-blend-mode: darken;
+
   }
   
   .content {
     /* background-color: white; */
     background-image: none;
     text-align: center;
+  }
+
+
+  .polygon {
+    clip-path: polygon(0% 0, 0 50%, 25% 100%, 100% 100%, 100% 100%, 75% 100%, 100% 50%, 100% 0);
   }
 
   .headTitleCont {
@@ -310,7 +323,7 @@ a:active {
     text-align: center;
 
   }
-  
+
   .logoCont {
     display: flex;
     justify-content: center;
@@ -331,8 +344,6 @@ a:active {
   .navImg {
     width: clamp(25px, 20vw, 150px);
   }
-
-
 
   .subHead {
     font-size: clamp(10px, 8vw, 50px);
@@ -361,7 +372,7 @@ a:active {
 
   .cardImgCont {
     width: 60vw;
-    
+
   }
 
   .cardImg {
@@ -370,13 +381,13 @@ a:active {
 
 
 
-  
+
 
 }
 
 /* TABLET QUERY */
 @media (min-width: 600px) {
-  
+
 }
 
 /* LAPTOP QUERY */
