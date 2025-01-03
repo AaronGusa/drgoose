@@ -4,6 +4,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* UNIVERSAL -  */
 @font-face {
   font-family: 'Rusty';
@@ -191,6 +196,7 @@ a {
   }
 
   body {
+    width: 100%;
     backdrop-filter: blur(7px);
   }
   
