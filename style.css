@@ -274,6 +274,10 @@ a:active {
 
   /* Header Nav Alphabetically Ordered */
 
+  .backWhite {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
   .content1 div h1{
     text-align: center;
     font-size: clamp(20px, 8vw, 500px);
@@ -282,7 +286,7 @@ a:active {
     background-clip: text;
     -webkit-text-fill-color: transparent; 
     /* color: #fff45d; */
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
   }
 
   .content1 div h1:after {
