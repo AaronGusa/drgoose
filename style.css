@@ -177,6 +177,17 @@ a {
 
 /* MOBILE */
 @media (max-width: 599px) {
+  html {
+    background-image: url('/assets/images/small/backMobile.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+
+  body {
+    backdrop-filter: blur(7px);
+  }
+  
   nav {
     display: flex;
     flex-direction: column;
