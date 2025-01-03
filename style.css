@@ -50,14 +50,14 @@ font-style: normal;
   background-size: 600% 600%;
 
 
-  -webkit-animation: wave 17s ease infinite;
-    animation: wave 17s ease infinite;
+  -webkit-animation: wave 25s ease infinite;
+    animation: wave 35s ease infinite;
     box-shadow: 0px 0px 5px black;
     min-height: 200px;
 }
 
 .fontWaveText {
-  color: rgb(255,0,0);
+  color: rgb(108, 197, 100);
   mix-blend-mode: difference;
   text-align: center;
   font-size: 8vw;
@@ -65,7 +65,7 @@ font-style: normal;
 
 .fontWaveText:after {
   color: rgb(0,255,255);
-  mix-blend-mode: darken;
+  mix-blend-mode: hard-light;
 }
 
 
@@ -154,14 +154,40 @@ li {
   font-family: 'Comfortaa', sans-serif;
 }
 
+/* .activePage {
+  position: relative;
+  width: max-content;
+}
+
+.activePage::after {
+  content: '';
+  background: linear-gradient(to right, rgb(44, 143, 97), rgb(65, 195, 228) );
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 100px;
+}
+
+.inactivePage {} */
+
+
+
 a {
   text-decoration: none;
+  color: #14301f;
 
+}
+
+a:active {
+  color: #380e0e;
 }
 
 .padIt {
   padding: 0.5rem;;
 }
+
 
 /* COMMONS */
 /* .flexRow {
@@ -187,7 +213,10 @@ a {
 } */
 
 /* MOBILE */
+
+
 @media (max-width: 599px) {
+  /* Roots */
   html {
     background-image: url('/assets/images/small/backMobile.webp');
     background-repeat: no-repeat;
@@ -197,7 +226,7 @@ a {
 
   body {
     width: 100%;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
   }
   
   nav {
@@ -208,8 +237,33 @@ a {
   }
 
   a {
-    padding: 1rem;
+    padding: clamp(2px, 2vw, 16px);
+    font-size: clamp(8px, 4vw, 20px);
     cursor: pointer;
+  }
+
+  /* Classes Alphabetically Ordered */
+
+  .content1 div h1{
+    text-align: center;
+    font-size: clamp(20px, 8vw, 500px);
+    background: linear-gradient(to bottom, rgb(44, 143, 97), rgb(65, 195, 228));
+    /* background: linear-gradient(to top, rgb(255, 80, 37), rgb(138, 101, 1)); */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    /* color: #fff45d; */
+    mix-blend-mode: difference;
+  }
+
+  .content1 div h1:after {
+    color: rgb(107, 221, 54);
+    mix-blend-mode: darken;
+  }
+  
+  .content {
+    background-color: white;
+    background-image: none;
+    text-align: center;
   }
 
   .headTitleCont {
@@ -222,13 +276,7 @@ a {
     text-align: center;
 
   }
-
-  .navTableUl {
-    margin: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-  }
-
+  
   .logoCont {
     display: flex;
     justify-content: center;
@@ -236,27 +284,30 @@ a {
     padding: 0;
   }
 
+  .navTableUl {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navTableUl li {
+    font-size: clamp(14px, 8vw, 16px);
+  }
+
   .navImg {
     width: clamp(25px, 20vw, 150px);
   }
 
-  .content {
-    background-color: white;
-    background-image: none;
-    text-align: center;
+
+
+  .subHead {
+    font-size: clamp(10px, 8vw, 50px);
+    font-weight: 100;
   }
 
-
-  .content1 div h1{
+  .textCont {
     text-align: center;
-    font-size: clamp(20px, 8vw, 500px);
-    /* background: linear-gradient(to bottom, rgb(44, 143, 97), rgb(65, 195, 228)); */
-    background: linear-gradient(to bottom, rgb(31, 89, 112), rgb(51, 81, 110));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
-
-  
 
 }
 
