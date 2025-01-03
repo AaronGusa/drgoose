@@ -1,6 +1,7 @@
 html {
   border: 1px solid black;
-  overflow: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* UNIVERSAL -  */
