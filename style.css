@@ -188,8 +188,36 @@ a:active {
   padding: 0.5rem;;
 }
 
+.blue {
+  color: white;
+  background-color: #244792;
+}
 
-/* COMMONS */
+.yellow {
+  color: rgb(38, 0, 63);
+  background-color: yellow;
+}
+
+.red {
+  color: white;
+}
+
+
+/* UNIVERSAL CARDS */
+
+.cardP {
+  border-radius: 0 0 25px 25px ;
+}
+.cardP h3 {
+  font-family: 'Rusty', serif;
+  font-weight: 100;
+}
+
+.cardP p {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+
 /* .flexRow {
   display: flex;
   flex-direction: row;
@@ -242,7 +270,7 @@ a:active {
     cursor: pointer;
   }
 
-  /* Classes Alphabetically Ordered */
+  /* Header Nav Alphabetically Ordered */
 
   .content1 div h1{
     text-align: center;
@@ -308,6 +336,32 @@ a:active {
   .textCont {
     text-align: center;
   }
+
+  /* Cards */
+
+  .cardContainer {
+    display: grid;
+    justify-content: center;
+  }
+
+  .cardA {
+    border-radius: 50px 50px 0 0;
+    overflow: hidden;
+    margin: 1rem 0;
+    padding: 0;
+  }
+
+  .cardImgCont {
+    width: 60vw;
+    background-color: #ffeea3;
+    
+  }
+
+  .cardImg {
+    width: 100%;
+  }
+
+  
 
 }
 
