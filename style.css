@@ -180,7 +180,7 @@ a {
   html {
     background-image: url('/assets/images/small/backMobile.webp');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
   }
 
