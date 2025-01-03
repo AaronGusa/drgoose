@@ -295,7 +295,7 @@ a:active {
   }
   
   .content {
-    background-color: white;
+    /* background-color: white; */
     background-image: none;
     text-align: center;
   }
@@ -348,6 +348,7 @@ a:active {
   .cardContainer {
     display: grid;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .cardA {
