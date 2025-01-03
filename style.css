@@ -197,7 +197,7 @@ a {
 
   body {
     width: 100%;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(2px);
   }
   
   nav {
