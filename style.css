@@ -251,7 +251,7 @@ a {
     text-align: center;
     font-size: clamp(20px, 8vw, 500px);
     /* background: linear-gradient(to bottom, rgb(44, 143, 97), rgb(65, 195, 228)); */
-    background: linear-gradient(to bottom, rgb(44, 143, 97), rgb(13, 53, 58));
+    background: linear-gradient(to bottom, rgb(31, 89, 112), rgb(51, 81, 110));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
