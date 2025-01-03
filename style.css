@@ -152,6 +152,10 @@ a {
 
 }
 
+.padIt {
+  padding: 0.5rem;;
+}
+
 /* COMMONS */
 /* .flexRow {
   display: flex;
