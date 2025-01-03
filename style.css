@@ -242,6 +242,14 @@ a:active {
   text-align: center;
 } */
 
+footer {
+  background:white ;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+
+
 /* MOBILE */
 
 
@@ -273,6 +281,11 @@ a:active {
   }
 
   /* Header Nav Alphabetically Ordered */
+
+  .backWhiteFade {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0));
+    
+  }
 
   .backWhiteUp {
     background: linear-gradient(to top, rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0));
@@ -308,10 +321,19 @@ a:active {
     text-align: center;
   }
 
+  .flexBocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 350px;
+    /* box-shadow: 2px 2px 15px black; */
+    padding: 1rem;
+    font-size: clamp(20px, 8vw, 500px);
+    }
+    
 
-  .polygon {
-    clip-path: polygon(0% 0, 0 50%, 25% 100%, 100% 100%, 100% 100%, 75% 100%, 100% 50%, 100% 0);
-  }
 
   .headTitleCont {
     display: block;
