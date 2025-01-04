@@ -377,6 +377,7 @@ footer {
   .subHead {
     font-size: clamp(10px, 8vw, 50px);
     font-weight: 100;
+    min-height: 100px;
   }
 
   .textCont {
@@ -436,6 +437,10 @@ footer {
     margin: .5rem;
   }
 
+  .headTitle{
+    font-size: 
+  }
+
   .logoCont {
     height: 50px;
     margin: .5rem;
@@ -451,6 +456,29 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .content1 div h1{
+    text-align: center;
+    font-size: clamp(20px, 8vw, 500px);
+    background: linear-gradient(to bottom, rgb(44, 143, 97), rgb(65, 195, 228));
+    /* background: linear-gradient(to top, rgb(255, 80, 37), rgb(138, 101, 1)); */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: #fff45d; */
+    /* mix-blend-mode: difference; */
+  }
+
+  .textCont {
+    text-align: center;
+  }
+
+  .fontWave {
+    min-height: 50px;
+  }
+
+  .subHead {
+    min-height: 50px;
   }
 }
 
