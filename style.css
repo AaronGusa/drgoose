@@ -285,7 +285,7 @@ footer {
 
   .backWhiteFade {
     background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0));
-    
+
   }
 
   .backWhiteUp {
@@ -315,14 +315,14 @@ footer {
     mix-blend-mode: darken;
 
   }
-  
+
   .content {
     /* background-color: white; */
     background-image: none;
     text-align: center;
   }
 
-  
+
 
   .headTitleCont {
     display: block;
@@ -353,7 +353,7 @@ footer {
       font-size: clamp(20px, 8vw, 500px);
       font-weight: lighter;
   }
-    
+
   .mblTxtClmp {
     font-size: clamp(20px, 8vw, 500px) !important;
   }
@@ -414,10 +414,46 @@ footer {
 
 }
 
+
+
 /* TABLET QUERY */
 @media (min-width: 600px) {
 
 }
+
+/* MOBILE/TABLET LANDSCAPE */
+@media /*(max-height: 1281px) and*/ (orientation: landscape) {
+  nav {
+    display: inline flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: .5rem 0;
+    align-items: center;
+  }
+
+  .headTitleCont {
+    width: clamp(300px, 40vw, 200px);
+    margin: .5rem;
+  }
+
+  .logoCont {
+    height: 50px;
+    margin: .5rem;
+    margin-left: 1rem;
+  }
+
+  .navImg {
+    height: 100%;
+  }
+
+  .navTable, .navTableUl { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
 
 /* LAPTOP QUERY */
 @media (min-width: 769px) {
