@@ -424,6 +424,19 @@ footer {
 
 /* MOBILE/TABLET LANDSCAPE */
 @media /*(max-height: 1281px) and*/ (orientation: landscape) {
+  html {
+    background-image: url('/assets/images/small/backMobile.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  body {
+    width: 100%;
+    backdrop-filter: blur(4px);
+  }
+
+  
   nav {
     display: inline flex;
     justify-content: space-between;
