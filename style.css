@@ -245,7 +245,7 @@ a:active {
 
 footer {
   background:white ;
-  margin-top: 2rem;
+  padding-top: 2rem;
   padding: 0.5rem 1rem;
 }
 
@@ -566,14 +566,251 @@ footer {
 }
 
 
-/* LAPTOP QUERY */
+/* LAPTOP QUERY ============================================================================================ */
 @media (min-width: 769px) {
 
 }
 
-/* DESKTOP */
+/* DESKTOP  ================================================================================================ */
+
 @media (min-width: 993px) {
+/* PARALLAX */
+
+
+.parallax {
+  background-image: url("/assets/images/bckgrnd.webp");
+
+  filter: saturate(155%);
+  min-height: 85vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.parallax1 {
+  background-image: url('/assets/images/bearLG.webp');
+  min-height: 600px;
+  width: auto;
+  background-size: 30%;
+
+  /* filter: saturate(175%); */
 
 }
+
+.parallax2 {
+  background-image: url('/assets/images/owlfamLG.webp');
+  min-height: 600px;
+  background-size: 50%;
+}
+
+.parallax1, .parallax2, .parallax3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  filter: invert(25%);
+}
+
+.captionMain {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+/* Parallax END */
+
+/* CARDS */
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  overflow: hidden;
+  /* border: 1px solid red; */
+  border-radius: 25% 25% 10% 10%;
+  margin: 1.25rem;
+  
+}
+
+.cardA {
+  text-decoration: none;
+  scale: 100%;
+  filter: saturate();
+  transition: all 0.15s ease-in-out;
+}
+
+.cardA:hover {
+  scale: 105%;
+  filter: saturate(150%);
+}
+
+.cardA:active {
+  filter: grayscale(60%);
+}
+
+.cardImgCont {
+  overflow: hidden;
+  aspect-ratio: 30 / 20 ;
+  justify-content: top;
+}
+
+.cardImg1 {
+  background-color: #fcedcd;
+}
+
+.cardP {
+  display: grid;
+  min-height: 80px;
+  text-align: center;
+  align-items: center;
+}
+
+.cardP h3 {
+  font-family: 'Rusty', serif;
+  font-size: 2rem;
+}
+
+.cardP p {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.blue {
+  color: white;
+  background-color: #244792;
+}
+
+.yellow {
+  color: rgb(38, 0, 63);
+  background-color: yellow;
+}
+
+.red {
+  color: white;
+  background-color: #a92017;
+}
+
+
+/* Cards END */
+.padIt {
+  padding: 0 1rem;
+}
+
+.flexBocks {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+min-height: 350px;
+/* box-shadow: 2px 2px 15px black; */
+padding: 1rem;
+}
+
+
+.headTagline {
+  font-size: 3rem;
+
+}
+
+.box {
+  background: linear-gradient(orange, navy);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  box-shadow: 2px 2px 5px black;
+}
+
+.box:hover {
+  rotate: 1080deg;
+}
+
+
+a {
+  color: rgb(5, 51, 5);
+}
+
+a:visited {
+  color: rgb(131, 112, 5);
+}
+
+.content {
+  background-color: white;
+  background-image: none;
+  
+  text-align: center;
+}
+
+
+.content1 div h1 {
+  font-size: 8rem;
+  /* background: linear-gradient(to bottom, rgb(44, 143, 97), rgb(65, 195, 228)); */
+  background: linear-gradient(to bottom, rgb(44, 143, 97), rgb(13, 53, 58));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content2 {
+  text-align: center;
+}
+
+.content1 {
+  background-color: transparent;
+  background-image: none;
+  
+  text-align: center;
+}
+
+.divGap {
+  height: 1500px;
+}
+
+.clrBckgrnd {
+  background-color: transparent;
+}
+
+.activePage {
+  position: relative;
+  padding-bottom: .5rem;
+  width: max-content;
+}
+
+.activePage::after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  background: #244792;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.subHead {
+  font-size: 4rem;
+}
+
+}
+
+
+
 
 /* HIGH RES - OLED? */
