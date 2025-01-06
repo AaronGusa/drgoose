@@ -530,8 +530,11 @@ footer {
 
   .cardContainer {
     padding-top: 1rem;
-    display: inline grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* display: inline grid;
+    grid-template-columns: 1fr 1fr 1fr; */
     width: 100%;
   }
 
@@ -672,8 +675,12 @@ footer {
 
   .cardContainer {
     padding-top: 1rem;
-    display: inline grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* display: inline grid;
+    grid-template-columns: 1fr 1fr 1fr; */
     width: 100%;
   }
 
