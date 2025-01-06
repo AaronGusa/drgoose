@@ -427,8 +427,17 @@ footer {
     width: 100%;
   }
 
+  /* ABOUT PAGE */
 
+  .AboutMain {
+    padding: .5rem;
+  }
 
+  .AboutHeadSection h2{
+    text-align: center;
+  }
+
+  
 
 
 }
