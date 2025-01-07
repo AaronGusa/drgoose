@@ -430,14 +430,30 @@ footer {
   /* ABOUT PAGE */
 
   .AboutMain {
-    padding: .5rem;
-  }
-
-  .AboutHeadSection h2{
     text-align: center;
   }
 
-  
+  .AboutHeadSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .AboutHeadSection h2{
+    padding: 2.5rem;
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+    background: grey;
+    clip-path: polygon(0 10%, 0 90%, 100% 100%, 100% 0%);
+    color: white;
+  }
+
+  .AboutBody, .AboutBody3 {
+    font-family: 'Comfortaa', serif;
+  }
 
 
 }
