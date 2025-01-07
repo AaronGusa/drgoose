@@ -21,7 +21,7 @@ body {
 font-family: 'SunnySpells';
 src: url('/assets/fonts/SunnySpells.ttf') format('truetype');
 font-weight: lighter;
-font-style: normal;
+font-style: unset;
 }
 
 @font-face {
@@ -446,15 +446,43 @@ footer {
     /* justify-content: center;
     align-items: center; */
     text-align: center;
-    background: grey;
+    background: #7c4e4e;
     clip-path: polygon(0 10%, 0 90%, 100% 100%, 100% 0%);
     color: white;
+    font-family: 'Rusty', sans-serif;
+    font-weight: lighter;
   }
 
-  .AboutBody, .AboutBody3 {
+  .AboutBody, .AboutBody2, .AboutBody3 {
+    padding: 2rem 1rem;
     font-family: 'Comfortaa', serif;
+    line-height: 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(255,255,255,1) , rgba(0, 0, 0,0));
   }
 
+  .AboutBody1 {
+    font-family: 'SunnySpells', sans-serif;
+    font-size: 2rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+  }
+
+  .AboutBody3 {
+    clip-path: polygon(0 0%, 0 100%, 100% 90%, 100% 10%);
+    background: rgb(170, 221, 255);
+  }
+
+  .AboutBody4 {
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .AboutBody4 img {
+    height: 200px;
+    
+  }
 
 }
 
@@ -646,6 +674,7 @@ footer {
 
   .navImg {
     height: 100%;
+    width: auto;
   }
 
   .navTable, .navTableUl { 
