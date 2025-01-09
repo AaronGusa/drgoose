@@ -620,7 +620,6 @@ footer {
   .bookImg {
     height: 100%;
     width: auto;
-    aspect-ratio: 1 / 1;
   }
 
   .bookAvailCont {
