@@ -6,7 +6,7 @@
 const books = [
   {
     title: 'Who Am I Really',
-    blurb: `This little bear is starting to wonder who he really is!<br>
+    blurb: `This little bear is starting to wonder who he really is!<br><br>
               Join our furry friend on an enchanting journey of self-discovery. As he searches for answers, he turns 
               to his wise and loving parents. Together, they help him understand that he is more than just a bear - He is
               a cherished child of God.`,
@@ -48,10 +48,16 @@ books.forEach(book => {
   const bookDiv = document.createElement('div');
   bookDiv.classList.add('book'+ [i]);
   bookDiv.innerHTML = `
-    <h2>${book.title}</h2> 
-    <p>${book.blurb}</p> 
-    <img src="${book.pic}" alt="Book Image">
-    <a href="#">${book.link}</a>
+    <div class=bookCont>
+      <div class=bookWordCont>
+        <h2 class="bookH">${book.title}</h2> 
+        <p class="bookP">${book.blurb}</p> 
+        <button><a class="bookLink" href="#">${book.link}</a></button>
+      </div> 
+      <div class=bookImgCont>
+        <img class="bookImg" src="${book.pic}" alt="Book Image">   
+      </div>
+    </div>  
   `;
   bookContainer.appendChild(bookDiv);
   i++;

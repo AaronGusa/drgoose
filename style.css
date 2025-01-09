@@ -507,7 +507,7 @@ footer {
   }
 
   .AboutBody3 {
-    clip-path: polygon(0 0%, 0 100%, 100% 90%, 100% 10%);
+    clip-path: polygon(0 0%, 0 100%, 100% 100%, 100% 100%);
     background: rgb(170, 221, 255);
     text-align: justify;
   }
@@ -522,6 +522,77 @@ footer {
   .AboutBody4 img {
     height: 200px;
     
+  }
+
+  /* BOOKS PAGE */
+
+
+
+  .book0, .book1, .book2, .book3 {
+    
+  }
+
+  .bookCont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .bookCont button {
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .book0 h2, .book2 h2{
+    clip-path: polygon(0 0%, 0 100%, 100% 100%, 100% 20%);
+    background: white;
+    background-color: rgb(5, 51, 5);
+    color: white;
+    padding: 1rem 0.5rem;
+  }
+
+  .book1 h2{
+    clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0%);
+    background: white;
+    background-color: rgb(5, 51, 5);
+    color: white;
+    padding: 1rem 0.5rem;
+    text-align: right;
+  }
+
+  .book3 h2{
+    clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0%);
+    background: white;
+    background-color: rgb(5, 51, 5);
+    color: white;
+    padding: 1rem 0.5rem;
+  }
+
+  .bookP {
+    background: whitesmoke;
+    padding: 1rem 0.5rem;
+  }
+
+  .bookWordCont {
+    /* background: whitesmoke; */
+    grid-column-start: 1; 
+    grid-column-end: span 2; 
+    z-index: 10;
+
+  }
+
+  .bookImgCont {
+    grid-column: span 2 3;
+
+    height: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 100;
+  }
+
+  .booklink {
+
   }
 
 }
