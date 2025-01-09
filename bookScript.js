@@ -64,7 +64,7 @@ const books = [
 
 // 
 
-let bookContainer = document.querySelector('.bookCont');
+let bookContainer = document.querySelector('.bookMainCont');
 let i = 0;
 books.forEach(book => {
   let link;

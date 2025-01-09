@@ -617,12 +617,9 @@ footer {
     object-fit: cover;
   }
 
-  .booklink {
-
-  }
-
   .bookImg {
-    box-shadow: 3px 3px 10px black;
+    height: 100%;
+    aspect-ratio: 1 / 1;
   }
 
   .bookAvailCont {
