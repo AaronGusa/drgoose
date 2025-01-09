@@ -536,14 +536,19 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .bookCont button {
     padding: 1rem;
     margin: 0 auto;
+
   }
 
-  .book0 h2, .book2 h2{
+  .book0 h2, .book2 h2, .book4 h2 {
     clip-path: polygon(0 0%, 0 100%, 100% 100%, 100% 20%);
     background: white;
     background-color: rgb(5, 51, 5);
@@ -551,22 +556,35 @@ footer {
     padding: 1rem 0.5rem;
   }
 
-  .book1 h2{
+  .book2 h2 {
+    background-color: rgb(80, 160, 120);
+    color: rgb(238, 200, 255);;
+  }
+
+  .book4 h2 {
+    background-color: rgb(255, 187, 0);
+    color: rgb(255, 255, 255);
+  }
+
+  .book1 h2, .book3 h2, .book5 h2 {
     clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0%);
     background: white;
-    background-color: rgb(5, 51, 5);
-    color: white;
+    background-color: rgb(251, 255, 1);
+    color: rgb(5, 4, 10);
     padding: 1rem 0.5rem;
     text-align: right;
   }
 
   .book3 h2{
-    clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0%);
-    background: white;
-    background-color: rgb(5, 51, 5);
+    background-color: rgb(8, 5, 51);
     color: white;
-    padding: 1rem 0.5rem;
   }
+
+  .book5 h2{
+    background-color: rgb(21, 16, 94);
+    color: white;
+  }
+  
 
   .bookP {
     background: whitesmoke;
@@ -577,22 +595,39 @@ footer {
     /* background: whitesmoke; */
     grid-column-start: 1; 
     grid-column-end: span 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     z-index: 10;
 
   }
 
   .bookImgCont {
     grid-column: span 2 3;
-
+    max-width: 80%;
     height: auto;
+    aspect-ratio: 1 / 1;
     display: flex;
     justify-content: center;
     overflow: hidden;
-    z-index: 100;
+    z-index: 0;
+    box-shadow: 3px 3px 10px black;
+    margin: 0 auto;
+    margin-bottom: -30px;
+    object-fit: cover;
   }
 
   .booklink {
 
+  }
+
+  .bookImg {
+    box-shadow: 3px 3px 10px black;
+  }
+
+  .bookAvailCont {
+    background: whitesmoke;
+    text-align: center;
   }
 
 }
