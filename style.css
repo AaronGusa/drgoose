@@ -608,7 +608,7 @@ footer {
     max-width: 80%;
     height: auto;
     aspect-ratio: 1 / 1;
-    /*object-fit: cover; */
+    object-fit: cover;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -618,10 +618,10 @@ footer {
     margin-bottom: -30px;
   }
 
-  /* .bookImg {
+   /* .bookImg {
     height: 100%;
     width: auto; 
-  }*/
+  } */
 
   .bookAvailCont {
     background: whitesmoke;
