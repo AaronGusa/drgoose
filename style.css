@@ -607,11 +607,11 @@ footer {
     grid-column: span 2 3;
     max-width: 80%;
     height: auto;
-    /* aspect-ratio: 1 / 1;
-    object-fit: cover; */
+    aspect-ratio: 1 / 1;
+    /*object-fit: cover; */
     display: flex;
     justify-content: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     z-index: 0;
     box-shadow: 3px 3px 10px black;
     margin: 0 auto;
