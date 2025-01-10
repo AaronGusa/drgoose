@@ -554,6 +554,7 @@ footer {
     background-color: rgb(5, 51, 5);
     color: white;
     padding: 1rem 0.5rem;
+    font-size: clamp(1.8rem, )
   }
 
   .book2 h2 {
@@ -607,14 +608,14 @@ footer {
     max-width: 80%;
     height: auto;
     aspect-ratio: 1 / 1;
+    object-fit: cover;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 0;
     box-shadow: 3px 3px 10px black;
     margin: 0 auto;
     margin-bottom: -30px;
-    object-fit: cover;
   }
 
   .bookImg {
