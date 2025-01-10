@@ -82,7 +82,6 @@ books.forEach(book => {
           <img class="bookImg" src="${book.pic}" alt="Book Image">   
         </div>
         <div class=bookWordCont>
-        
           <h2 class="bookH">${book.title}</h2> 
           <p class="bookP">${book.blurb}</p> 
           ${link}
