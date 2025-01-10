@@ -71,20 +71,21 @@ books.forEach(book => {
   if (book.link != 'Coming TBD') { 
     link = '<button class="bookButton"><a class="bookLink" href="#">${book.link}</a></button>';
   } else {
-    link = `<div class="bookAvailCont"><h1 class="bookAvail">Available on Amazon <br>${book.release}</h1></div>`;
+    link = `<div class="bookAvailCont"><h1 class="bookAvail">Available<br>${book.release}</h1></div>`;
   };
 
   const bookDiv = document.createElement('div');
   bookDiv.classList.add('book'+ [i]);
   bookDiv.innerHTML = `
     <div class=bookCont>
-      <div class=bookWordCont>
         <div class=bookImgCont>
           <img class="bookImg" src="${book.pic}" alt="Book Image">   
         </div>
-        <h2 class="bookH">${book.title}</h2> 
-        <p class="bookP">${book.blurb}</p> 
-        ${link}
+        <div class=bookWordCont>
+        
+          <h2 class="bookH">${book.title}</h2> 
+          <p class="bookP">${book.blurb}</p> 
+          ${link}
         </div> 
     </div>  
     <br>

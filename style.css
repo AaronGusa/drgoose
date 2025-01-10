@@ -525,11 +525,16 @@ footer {
   }
 
   /* BOOKS PAGE */
-
-
-
-  .book0, .book1, .book2, .book3 {
-    
+  
+  .bookTitleCont {
+    min-height: 200px;
+    text-align: center;
+    font-size: clamp(1.8rem, calc(8vw + 1rem), 3rem);
+    /* background: linear-gradient(to top, rgba(0,0,0,0), rgb(13, 13, 77),rgba(0,0,0,0) ); */
+    background: black;
+    color: white;
+    margin-bottom: 2rem;
+    padding: 1rem;
   }
 
   .bookCont {
@@ -548,13 +553,26 @@ footer {
 
   }
 
+  .book0 h2, .book2 h2, .book4 h2, .book1 h2, .book3 h2, .book5 h2 {
+    padding: 1rem 0.5rem;
+    font-size: clamp(1.8rem, calc(5vw + 1rem), 3rem);
+
+
+  } 
+
   .book0 h2, .book2 h2, .book4 h2 {
     clip-path: polygon(0 0%, 0 100%, 100% 100%, 100% 20%);
-    background: white;
+    
+  }
+
+  .book0 h2 {
     background-color: rgb(5, 51, 5);
     color: white;
-    padding: 1rem 0.5rem;
-    font-size: clamp(1.8rem, )
+  }
+
+  .book1 h2 {
+    background-color: rgb(251, 255, 1);
+    color: rgb(8, 11, 43);
   }
 
   .book2 h2 {
@@ -569,11 +587,9 @@ footer {
 
   .book1 h2, .book3 h2, .book5 h2 {
     clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0%);
-    background: white;
-    background-color: rgb(251, 255, 1);
     color: rgb(5, 4, 10);
-    padding: 1rem 0.5rem;
     text-align: right;
+
   }
 
   .book3 h2{
@@ -626,6 +642,7 @@ footer {
   .bookAvailCont {
     background: whitesmoke;
     text-align: center;
+    padding-bottom: 1.5rem;
   }
 
 }
@@ -646,7 +663,7 @@ footer {
     backdrop-filter: blur(4px);
   }
 
-  p, h2 {
+  p, h2, h1, div {
     
   max-width: 1024px;
   margin: 0 auto;
@@ -838,6 +855,132 @@ footer {
   .AboutBody4 img {
     height: 349px;
     display: flex;
+  }
+
+  /* BOOKS PAGE */
+
+  .bookTitleCont {
+    display: flex;
+    min-height: 200px;
+    text-align: center;
+    font-size: clamp(1.8rem, calc(8vw + 1rem), 3rem);
+    /* background: linear-gradient(to top, rgba(0,0,0,0), rgb(13, 13, 77),rgba(0,0,0,0) ); */
+    background: black;
+    color: white;
+    margin-bottom: 2rem;
+    align-items: center;
+
+  }
+
+  .bookCont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .bookCont button {
+    padding: 1rem;
+    margin: 0 auto;
+
+  }
+
+  .book0 h2, .book2 h2, .book4 h2, .book1 h2, .book3 h2, .book5 h2 {
+    padding: 1rem 0.5rem;
+    font-size: clamp(1.8rem, calc(5vw + 1rem), 3rem);
+    width: 100%;
+
+  } 
+
+  .book0 h2, .book2 h2, .book4 h2 {
+    clip-path: polygon(0 0%, 0 100%, 100% 100%, 100% 20%);
+    
+  }
+
+  .book1 h2, .book3 h2, .book5 h2 {
+      clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0%);
+      color: rgb(5, 4, 10);
+      text-align: right;
+
+  }
+
+  .book0 h2 {
+    background-color: rgb(5, 51, 5);
+    color: white;
+  }
+
+  .book1 h2 {
+    background-color: rgb(251, 255, 1);
+    color: rgb(8, 11, 43);
+  }
+
+  .book2 h2 {
+    background-color: rgb(80, 160, 120);
+    color: rgb(238, 200, 255);;
+  }
+
+  .book4 h2 {
+    background-color: rgb(255, 187, 0);
+    color: rgb(255, 255, 255);
+  }
+
+  
+
+  .book3 h2{
+    background-color: rgb(8, 5, 51);
+    color: white;
+  }
+
+  .book5 h2{
+    background-color: rgb(21, 16, 94);
+    color: white;
+  }
+  
+
+  .bookP {
+    background: whitesmoke;
+    padding: 1rem 0.5rem;
+  }
+
+  .bookWordCont {
+    grid-column-start: 1; 
+    grid-column-end: span 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+
+  }
+
+  .bookImgCont {
+    grid-column: span 2 3;
+    width: 477px;
+    height: 477px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 0;
+    box-shadow: 3px 3px 10px black;
+    margin: 0 auto;
+    margin-bottom: -30px;
+  }
+
+    .bookImg {
+    height: auto;
+    width: 100%; 
+  } 
+
+  .bookAvailCont {
+    width: 100%;
+    background: whitesmoke;
+    text-align: center;
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -1059,6 +1202,121 @@ footer {
 .AboutBody4 img {
   height: 400px;
   
+}
+
+  /* BOOKS PAGE */
+
+  .bookTitleCont {
+    min-height: 200px;
+
+  }
+
+.bookCont {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookCont button {
+  padding: 1rem;
+  margin: 0 auto;
+
+}
+
+.book0 h2, .book2 h2, .book4 h2, .book1 h2, .book3 h2, .book5 h2 {
+  padding: 1rem 0.5rem;
+  font-size: clamp(1.8rem, calc(5vw + 1rem), 3rem);
+
+
+} 
+
+.book0 h2, .book2 h2, .book4 h2 {
+  clip-path: polygon(0 0%, 0 100%, 100% 100%, 100% 20%);
+  
+}
+
+.book0 h2 {
+  background-color: rgb(5, 51, 5);
+  color: white;
+}
+
+.book1 h2 {
+  background-color: rgb(251, 255, 1);
+  color: rgb(8, 11, 43);
+}
+
+.book2 h2 {
+  background-color: rgb(80, 160, 120);
+  color: rgb(238, 200, 255);;
+}
+
+.book4 h2 {
+  background-color: rgb(255, 187, 0);
+  color: rgb(255, 255, 255);
+}
+
+.book1 h2, .book3 h2, .book5 h2 {
+  clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0%);
+  color: rgb(5, 4, 10);
+  text-align: right;
+
+}
+
+.book3 h2{
+  background-color: rgb(8, 5, 51);
+  color: white;
+}
+
+.book5 h2{
+  background-color: rgb(21, 16, 94);
+  color: white;
+}
+
+
+.bookP {
+  background: whitesmoke;
+  padding: 1rem 0.5rem;
+}
+
+.bookWordCont {
+  /* background: whitesmoke; */
+  grid-column-start: 1; 
+  grid-column-end: span 2; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+
+}
+
+.bookImgCont {
+  grid-column: span 2 3;
+  width: 80%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 0;
+  box-shadow: 3px 3px 10px black;
+  margin: 0 auto;
+  margin-bottom: -30px;
+}
+
+  .bookImg {
+  height: auto;
+  width: 100%; 
+} 
+
+.bookAvailCont {
+  background: whitesmoke;
+  text-align: center;
+  padding-bottom: 1.5rem;
 }
 }
 
