@@ -618,10 +618,10 @@ footer {
     margin-bottom: -30px;
   }
 
-  .bookImg {
+  /* .bookImg {
     height: 100%;
-    width: auto;
-  }
+    width: auto; 
+  }*/
 
   .bookAvailCont {
     background: whitesmoke;
