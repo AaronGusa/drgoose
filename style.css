@@ -188,6 +188,10 @@ a:active {
   padding: 0.5rem;;
 }
 
+.parBlue {
+  color: #244792;
+}
+
 .blue {
   color: white;
   background-color: #244792;
@@ -527,6 +531,7 @@ footer {
   /* BOOKS PAGE */
   
   .bookTitleCont {
+    
     min-height: 200px;
     text-align: center;
     font-size: clamp(1.8rem, calc(8vw + 1rem), 3rem);
@@ -663,11 +668,11 @@ footer {
     backdrop-filter: blur(4px);
   }
 
-  p, h2, h1, div {
+  /* p, h2, h1, div {
     
   max-width: 1024px;
   margin: 0 auto;
-  }
+  } */
 
   nav {
     display: inline flex;
@@ -1207,10 +1212,11 @@ footer {
   /* BOOKS PAGE */
 
   .bookTitleCont {
-    display: flex;
+    display: grid;
+    margin: 0 auto;
     min-height: 100px;
     text-align: center;
-    font-size: clamp(1.8rem, calc(8vw + 1rem), 3rem);
+    font-size: clamp(1.8rem, calc(6vw + 1rem), 2rem);
     /* background: linear-gradient(to top, rgba(0,0,0,0), rgb(13, 13, 77),rgba(0,0,0,0) ); */
     background: black;
     color: white;
@@ -1220,116 +1226,121 @@ footer {
   }
 
 
-.bookCont {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  column-gap: 0.75rem;
-  padding-bottom: 2rem;
-  justify-content: center;
-  align-items: center;
+  .bookCont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 0.75rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
 
-}
+  }
 
-.bookCont button {
-  padding: 1rem;
-  margin: 0 auto;
+  .bookCont button {
+    padding: 1rem;
+    margin: 0 auto;
 
-}
+  }
 
-.book0 h2, .book2 h2, .book4 h2, .book1 h2, .book3 h2, .book5 h2 {
-  padding: 1rem 0.5rem;
-  font-size: clamp(1.8rem, calc(5vw + 1rem), 3rem);
-
-
-} 
-
-.book0 h2, .book2 h2, .book4 h2 {
-  clip-path: polygon(0 0%, 0 100%, 100% 100%, 100% 20%);
-  
-}
-
-.book0 h2 {
-  background-color: rgb(5, 51, 5);
-  color: white;
-}
-
-.book1 h2 {
-  background-color: rgb(251, 255, 1);
-  color: rgb(8, 11, 43);
-}
-
-.book2 h2 {
-  background-color: rgb(80, 160, 120);
-  color: rgb(238, 200, 255);;
-}
-
-.book4 h2 {
-  background-color: rgb(255, 187, 0);
-  color: rgb(255, 255, 255);
-}
-
-.book1 h2, .book3 h2, .book5 h2 {
-  clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0%);
-  color: rgb(5, 4, 10);
-  text-align: right;
-
-}
-
-.book3 h2{
-  background-color: rgb(8, 5, 51);
-  color: white;
-}
-
-.book5 h2{
-  background-color: rgb(21, 16, 94);
-  color: white;
-}
+  .book0 h2, .book2 h2, .book4 h2, .book1 h2, .book3 h2, .book5 h2 {
+    padding: 1rem 0.5rem;
+    font-size: clamp(1.8rem, calc(5vw + 1rem), 3rem);
 
 
-.bookP {
-  background: whitesmoke;
-  padding: 1rem 0.5rem;
-}
+  } 
 
-.bookWordCont {
-  /* background: whitesmoke; */
-  grid-column: 1; 
-  grid-row: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 10;
+  .book0 h2, .book2 h2, .book4 h2 {
+    clip-path: polygon(0 0%, 0 100%, 100% 100%, 100% 20%);
+    
+  }
 
-}
+  .book0 h2 {
+    background-color: rgb(5, 51, 5);
+    color: white;
+  }
 
-.bookImgCont {
-  grid-column: 3;
-  width: 100%;
-  height: 320px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  z-index: 0;
-  box-shadow: 3px 3px 10px black;
-  margin: 0 auto;
-  margin-bottom: -30px;
-}
+  .book1 h2 {
+    background-color: rgb(251, 255, 1);
+    color: rgb(8, 11, 43);
+  }
 
-  .bookImg {
-  height: auto;
-  width: 100%; 
-} 
+  .book2 h2 {
+    background-color: rgb(80, 160, 120);
+    color: rgb(238, 200, 255);;
+  }
 
-.bookAvailCont {
-  background: whitesmoke;
-  text-align: center;
-  padding-bottom: 1.5rem;
-}
+  .book4 h2 {
+    background-color: rgb(255, 187, 0);
+    color: rgb(255, 255, 255);
+  }
+
+  .book1 h2, .book3 h2, .book5 h2 {
+    clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0%);
+    color: rgb(5, 4, 10);
+    text-align: right;
+
+  }
+
+  .book3 h2{
+    background-color: rgb(8, 5, 51);
+    color: white;
+  }
+
+  .book5 h2{
+    background-color: rgb(21, 16, 94);
+    color: white;
+  }
+
+
+  .bookP {
+    background: whitesmoke;
+    padding: 1rem 0.5rem;
+  }
+
+  .bookWordCont {
+    /* background: whitesmoke; */
+    grid-column: 1; 
+    grid-row: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+
+  }
+
+  .bookImgCont {
+    grid-column: 3;
+    width: 100%;
+    height: 320px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 0;
+    box-shadow: 3px 3px 10px black;
+    margin: 0 auto;
+    margin-bottom: -30px;
+  }
+
+    .bookImg {
+    height: auto;
+    width: 100%; 
+  } 
+
+  .bookAvailCont {
+    background: whitesmoke;
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+
+  .mxWdth {
+    max-width: 95%;
+    margin: 0 auto;
+  }
 }
 
 
@@ -1341,8 +1352,48 @@ footer {
 /* DESKTOP  ================================================================================================ */
 
 @media (min-width: 1200px) {
-  /* PARALLAX */
+   .deskWidth, .captionMain, .textCont, .headline, .subHead, .flexBocks {
+    max-width: 100%;
+    margin: 0 auto;
+  } 
+
   
+
+  .mxWdth {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .captionMain {
+    height: fit-content;
+  }
+
+  .textCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 300px;
+  }
+
+  .fontWave {
+    border-radius: 75px;
+    max-width: 2024px;
+    margin: 0 auto;
+  }
+
+  .fontWaveText {
+    font-size: 5vw;
+    padding: 0 3rem;
+  }
+
+
+  .mblTxtClmp {
+    font-size: clamp(2rem, calc(8vw + 1rem), 5rem);
+  }
+
+
+  /* PARALLAX */
   
   .parallax {
     background-image: url("/assets/images/bckgrnd.webp");
@@ -1359,7 +1410,7 @@ footer {
   
   .parallax1 {
     background-image: url('/assets/images/bearLG.webp');
-    min-height: 600px;
+    min-height: 800px;
     width: auto;
     background-size: 30%;
   
@@ -1369,7 +1420,13 @@ footer {
   
   .parallax2 {
     background-image: url('/assets/images/owlfamLG.webp');
-    min-height: 600px;
+    min-height: 800px;
+    background-size: 50%;
+  }
+
+  .parallax3 {
+    background-image: url('/assets/images/fox1.webp');
+    min-height: 800px;
     background-size: 50%;
   }
   
@@ -1379,6 +1436,8 @@ footer {
     background-position: bottom;
     background-repeat: no-repeat;
   }
+
+  
   
   .caption {
     position: absolute;
@@ -1497,6 +1556,10 @@ footer {
     font-size: 3rem;
   
   }
+
+  #shrinkHead {
+    font-size: 4rem;
+  }
   
   .box {
     background: linear-gradient(orange, navy);
@@ -1573,6 +1636,12 @@ footer {
   
   .subHead {
     font-size: 4rem;
+  }
+
+  .bookTitleCont {
+    display: grid;
+    text-align: center;
+
   }
   
   }
