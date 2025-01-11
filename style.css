@@ -610,6 +610,7 @@ footer {
   .bookP {
     background: whitesmoke;
     padding: 1rem 0.5rem;
+    font-family: 'Comfortaa', sans-serif;
   }
 
   .bookWordCont {
@@ -1210,6 +1211,10 @@ footer {
 
   /* BOOKS PAGE */
 
+  .bookMainCont {
+    display: flex;
+    flex-direction: column;
+  }
   .bookTitleCont {
     display: grid;
     margin: 0 auto;
@@ -1296,6 +1301,8 @@ footer {
   .bookP {
     background: whitesmoke;
     padding: 1rem 0.5rem;
+    font-family: 'Comfortaa', sans-serif;
+
   }
 
   .bookWordCont {
@@ -1641,6 +1648,20 @@ footer {
     display: grid;
     text-align: center;
 
+  }
+
+  .bookMainCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bookP {
+    font-family: 'Comfortaa', sans-serif;
+    padding: 1.5rem;
   }
   
   }
