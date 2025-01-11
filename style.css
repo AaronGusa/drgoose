@@ -1214,6 +1214,7 @@ footer {
   .bookMainCont {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
   }
   .bookTitleCont {
     display: grid;
