@@ -1370,6 +1370,11 @@ footer {
     margin: 0 auto;
   }
 
+  .bookBoxWdth {
+    max-width: 1550px;
+    margin: 0 auto;
+  }
+
   .captionMain {
     height: fit-content;
   }
@@ -1642,6 +1647,13 @@ footer {
   
   .subHead {
     font-size: 4rem;
+  }
+
+  .bookImgCont {
+    
+    aspect-ratio: 1/1;
+    width: 90%;
+    height: auto;
   }
 
   .bookTitleCont {
