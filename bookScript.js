@@ -51,9 +51,7 @@ const books = [
   },
   {
     title: 'Fathers',
-    blurb: `Dive into an enchanting telling of three curious owl siblings. When their father brings home surprise toy bags, they 
-            start to wonder if their pregnant mother is anything like blind bags. Could she be carrying a fairy princess? Maybe a 
-            playful puppy? Or perhaps even a bunch of chicken nuggets? `,
+    blurb: ``,
     link: 'Coming TBD',
     pic: '/assets/images/bookcovers/Fathers.png',
     release: 'April 20, 2025'
