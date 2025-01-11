@@ -9,9 +9,9 @@
 //     "deg)";
 // }
 
-const text = document.querySelector('.constructionText p');
-text.innerHTML = text.innerText.split("").map(
-  (char, i) => `<span style="transform: rotate(${i * 7.7}deg)">${char}</span>`
-).join('');
+// const text = document.querySelector('.constructionText p');
+// text.innerHTML = text.innerText.split("").map(
+//   (char, i) => `<span style="transform: rotate(${i * 7.7}deg)">${char}</span>`
+// ).join('');
 
 
