@@ -1678,6 +1678,34 @@ footer {
     font-family: 'Comfortaa', sans-serif;
     padding: 1.5rem;
   }
+
+  /* INSPIRE PAGE */
+  .inspireHeader {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+
+  }
+
+  .inspireCont {
+    max-width: 95vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 700px;
+    overflow: visible;
+  }
+
+  .inpsireBlurbCont, .inspireForm {
+    border: #14301f solid 4px;
+    border-radius: 10%;
+    height: 100%;
+
+    padding: 3rem;
+  }
   
   }
   

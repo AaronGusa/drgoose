@@ -15,3 +15,18 @@
 // ).join('');
 
 
+document.getElementById('contactForm').addEventListener('submit', function(event) { event.preventDefault();
+   const honeypot = document.querySelector('[name="contact_me_by_email"]').checked;
+    if (honeypot) { 
+      console.log('Spam bot detected');
+       return;
+    } 
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    const emailContent = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+    const mailtoLink = `mailto:your-email@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailContent)}`;
+    window.location.href = mailtoLink; 
+  }
+);
