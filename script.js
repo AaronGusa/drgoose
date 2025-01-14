@@ -30,3 +30,44 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     window.location.href = mailtoLink; 
   }
 );
+
+// let droplets = document.querySelectorAll('.drop');
+//  let positions = Array.from({ length: droplets.length }, () => ({ x: 0, y: 0 }));
+//  document.addEventListener('mousemove', function(e) { 
+//   positions.unshift({ x: e.clientX, y: e.clientY });
+  
+//   if (positions.length > droplets.length * 20) { positions.pop();}
+  
+//   droplets.forEach((droplet, index) => {
+//      if (positions[index * 10]) { droplet.style.transform = `translate(${positions[index * 20].x - 75}px,
+//        ${positions[index * 10].y - 75}px) scale(${1 - index * 0.1})`; } }); });
+
+// const bubble = document.querySelector('.drop');
+// let x = Math.random() * window.innerWidth;
+// let y = Math.random() * window.innerHeight;
+// let vx = (Math.random() - 0.5) * .2;
+// let vy = (Math.random() - 0.5) * .2;
+
+// const updatePosition = () => {
+//     x += vx;
+//     y += vy;
+
+//     if (x <= 0 || x >= window.innerWidth) vx *= -1;
+//     if (y <= 0 || y >= window.innerHeight) vy *= -1;
+
+//     bubble.style.transform = `translate(${x}px, ${y}px)`;
+// };
+
+// const hitBubble = (e) => {
+//     const dx = e.clientX - x;
+//     const dy = e.clientY - y;
+//     const distance = Math.sqrt(dx * dx + dy * dy);
+
+//     if (distance < 50) {
+//         vx = (dx / distance) * 1;
+//         vy = (dy / distance) * 1;
+//     }
+// };
+
+// document.addEventListener('mousemove', hitBubble);
+// setInterval(updatePosition, .01);
