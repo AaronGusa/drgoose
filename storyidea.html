@@ -54,7 +54,7 @@
                wisdom. 
             </p>
             <br><br>
-            <p>
+            <p id="inspireP2" class="AboutBody3">
                 Dr. Goose wants to provide an avenue for parents to reforge family bonds! If you have
                 a family story, legend, or lesson, you can share the premise with Dr. Goose and he will
                 write and illustrate a book inspired by you with a credit to you and your family! 
@@ -66,22 +66,26 @@
         
         <div class="inspireForm">    
             <form id="contactForm"> 
-                <h2>Contact Us</h2> 
+                <h2>Share</h2> 
                 <div class="input-group"> 
-                    <label for="name">Name</label> 
-                    <input type="text" id="name" placeholder="Enter your name" required> 
+                    <label for="name"></label> 
+                    <input type="text" id="name" placeholder="Your name" required> 
+                    <small class="error"></small>
                 </div>
                 <div class="input-group"> 
-                    <label for="email">Email</label> 
-                    <input type="email" id="email" placeholder="Enter your email" required> 
+                    <label for="famName"></label> 
+                    <input type="text" id="famName" placeholder="Your family name. ex. The Johnson Family" required> 
+                    <small class="error"></small>
+                </div>
+                <div class="input-group"> 
+                    <label for="email"></label> 
+                    <input type="email" id="email" placeholder="Email" required> 
+                    <small class="error"></small>
                 </div> 
                 <div class="input-group"> 
-                    <label for="subject">Subject</label> 
-                    <input type="text" id="subject" placeholder="Enter the subject" required> 
-                </div> 
-                <div class="input-group"> 
-                    <label for="message">Message</label> 
-                    <textarea id="message" placeholder="Enter your message" required></textarea> 
+                    <label for="message"></label> 
+                    <textarea id="message" placeholder="Type your premise here." required></textarea> 
+                    <small class="error"></small>
                 </div> 
                 <div style="display:none !important;"> 
                     <input type="checkbox" name="contact_me_by_email" value="1" tabindex="-1" autocomplete="off"> 
@@ -99,7 +103,8 @@
             <h1 class="legalH1">Hello, I'm Lee Gull Seagle.</h1>
             <p>Please note that by submitting your valued contributions, Dr. Goose will own all
                rights to his work and efforts. He will <span class="underlined">NOT</span> claim 
-               your families story, or any right to it, with exception to his work and use of it. 
+               your families story, or any right to it, with exception to his work and use of it. By submitting
+               you are granting permissions to Dr. Goose to bring your valued stories to life through this medium.
             </p>
             <br>
             <p>Dr. Goose has a deep treasure-trove of stories and ideas to bring forward in his works.
