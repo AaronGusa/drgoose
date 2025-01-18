@@ -289,6 +289,24 @@ footer {
 }
 
 
+/* FORM */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(1rem, 3vw, 2rem);
+}
+
+
+.error {
+  color: rgb(255, 159, 159);
+  font-family: 'Rusty', sans-serif;
+  font-size: clamp(0.6rem, 1.6vw, 1.5rem);
+}
+
+.errorBorder {
+  border-bottom: 1px solid red;
+}
+
 /* 
 .footerDiv p {
   display: grid;

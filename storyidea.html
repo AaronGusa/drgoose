@@ -7,7 +7,7 @@
 
     <link rel="icon" type="image/x-icon" href="/assets/drgoose.ico">
     <title>Dr. Goose Coming Soon</title>
-    <script src="/script.js" defer></script>
+    <script src="/inspireScript.js" defer></script>
 </head>
 
 <body>
@@ -69,11 +69,11 @@
         </div>
         
         <div class="inspireForm">    
-            <form id="contactForm"> 
+            <form id="contactForm" onsubmit="event.preventDefault(); validate()"> 
                 <h2>Share</h2> 
                 <div class="input-group"> 
                     <label for="name"></label> 
-                    <input type="text" id="name" placeholder="Your name" required> 
+                    <input type="text" id="name" placeholder="Your name" minlength="2" required > 
                     <small class="error"></small>
                 </div>
                 <div class="input-group"> 
@@ -88,11 +88,12 @@
                 </div> 
                 <div class="input-group"> 
                     <label for="message"></label> 
-                    <textarea id="message" placeholder="Type the premise here." required></textarea> 
+                    <textarea id="message" placeholder="Type the premise here." required minlength="100" maxlength="500"></textarea> 
                     <small class="error"></small>
                 </div> 
-                <div style="display:none !important;"> 
-                    <input type="checkbox" name="contact_me_by_email" value="1" tabindex="-1" autocomplete="off"> 
+                <div style="display:none !important;">
+                    <label for="contact_me_by_email">Contact by Email</label>
+                    <input id="contact_me_by_email" type="checkbox" name="contact_me_by_email" value="1" tabindex="-1" autocomplete="off"> 
                 </div> 
                 <button type="submit" class="btn">Send Suggestion</button>
             </form>        
