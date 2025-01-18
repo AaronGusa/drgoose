@@ -1094,7 +1094,7 @@ footer {
   }
 
   .inpsireBlurbCont p {
-    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    font-size: clamp(1.8rem, 1.5vw, 2.5rem);
     line-height: 3rem;
     background: none;
   }
