@@ -7,7 +7,7 @@
 
     <link rel="icon" type="image/x-icon" href="/assets/drgoose.ico">
     <title>Dr. Goose Coming Soon</title>
-    <script src="/inspireScript.js" defer></script>
+    <script src="/script.js" defer></script>
 </head>
 
 <body>
@@ -69,7 +69,7 @@
         </div>
         
         <div class="inspireForm">    
-            <form id="contactForm" onsubmit="event.preventDefault(); validate()"> 
+            <form id="contactForm" onsubmit="event.preventDefault();"> 
                 <h2>Share</h2> 
                 <div class="input-group"> 
                     <label for="name"></label> 
@@ -88,7 +88,7 @@
                 </div> 
                 <div class="input-group"> 
                     <label for="message"></label> 
-                    <textarea id="message" placeholder="Type the premise here." required minlength="100" maxlength="500"></textarea> 
+                    <textarea id="message" placeholder="Type the premise here." required minlength="80" maxlength="500"></textarea> 
                     <small class="error"></small>
                 </div> 
                 <div style="display:none !important;">
