@@ -34,6 +34,8 @@ function sendMail() { document.getElementById('contactForm').addEventListener('s
 );
 }
 
+
+
 // let droplets = document.querySelectorAll('.drop');
 //  let positions = Array.from({ length: droplets.length }, () => ({ x: 0, y: 0 }));
 //  document.addEventListener('mousemove', function(e) { 
