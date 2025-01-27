@@ -624,7 +624,7 @@ footer {
   }
 
   .text {
-    width: 100vw;
+    width: 90vw;
     margin: 0 auto;
     height: fit-content;
   }
@@ -1388,7 +1388,8 @@ footer {
     grid-row: 1;
     display: flex;
     z-index: 0;
-    filter: blur(2px);
+    filter: blur(2px) brightness(1.2);
+    /* filter: brightness(1.2); */
   }
 
   .logoCont {

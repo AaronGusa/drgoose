@@ -5,7 +5,7 @@
  */
 const books = [
   {
-    title: 'Who Am I Really',
+    title: 'Who Am I Really?',
     blurb: `This little bear is starting to wonder who he really is!<br><br>
               Join our furry friend on an enchanting journey of self-discovery. As he searches for answers, he turns 
               to his wise and loving parents. Together, they help him understand that he is more than just a bear - He is
@@ -33,7 +33,7 @@ const books = [
     release: 'January 31, 2025'
   },
   {
-    title: 'What is Our Baby',
+    title: 'What is Our Baby?',
     blurb: `Dive into an enchanting telling of three curious owl siblings. When their father brings home surprise toy bags, they 
             start to wonder if their pregnant mother is anything like blind bags. Could she be carrying a fairy princess? Maybe a 
             playful puppy? Or perhaps even a bunch of chicken nuggets? `,
