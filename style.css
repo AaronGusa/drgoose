@@ -42,6 +42,10 @@ font-style: normal;
   padding: 0;
 }
 
+.paddedTop {
+  padding: 2rem 0;
+}
+
 .fontWave {
   display: grid;
   align-items: center;
@@ -107,6 +111,7 @@ p {
   cursor: pointer;
   
 }
+
 
 .button1:hover{
   background: #fffdf0;
@@ -839,13 +844,18 @@ footer {
     clip-path: polygon(0 0, 97% 5%, 100% 100%, 5% 100%);
     background-color: rgba(20, 48, 31, 0.5);
     margin: 0.5rem;
-    padding: 1rem;
+    padding: 5rem;
   }
 
   .inspireForm h2 {
     padding: 1rem;
     font-size: 3rem;
     color: white;
+  }
+
+  .buttonCont {
+    display: flex;
+    justify-content: center;
   }
 
   input, textArea {
@@ -1241,13 +1251,18 @@ footer {
     clip-path: polygon(0 0, 97% 5%, 100% 100%, 5% 100%);
     background-color: rgba(20, 48, 31, 0.5);
     margin: 0.5rem;
-    padding: 1rem;
+    padding: 5rem;
   }
 
   .inspireForm h2 {
     padding: 1rem;
     font-size: 3rem;
     color: white;
+  }
+
+  .buttonCont {
+    display: flex;
+    justify-content: center;
   }
 
   input, textArea {
@@ -2052,6 +2067,10 @@ footer {
     font-size: clamp(2rem, calc(8vw + 1rem), 5rem);
   }
 
+  .landingBannerFont {
+    font-size: clamp(1rem, calc(8vw + 1rem), 4rem);
+  }
+
 
   /* PARALLAX */
   
@@ -2070,7 +2089,7 @@ footer {
   
   .parallax1 {
     background-image: url('/assets/images/bearLG.webp');
-    min-height: 500px;
+    min-height: 600px;
     width: auto;
     background-size: 30%;
   
@@ -2080,13 +2099,13 @@ footer {
   
   .parallax2 {
     background-image: url('/assets/images/owlfamLG.webp');
-    min-height: 500px;
+    min-height: 700px;
     background-size: 50%;
   }
 
   .parallax3 {
-    background-image: url('/assets/images/fox1.webp');
-    min-height: 500px;
+    background-image: url('/assets/images/sisterFox.webp');
+    min-height: 800px;
     background-size: 50%;
   }
   
@@ -2096,8 +2115,6 @@ footer {
     background-position: bottom;
     background-repeat: no-repeat;
   }
-
-  
   
   .caption {
     position: absolute;
@@ -2240,7 +2257,7 @@ footer {
   }
   
   a:visited {
-    color: rgb(131, 112, 5);
+    color: inherit;
   }
   
   .content {
@@ -2405,7 +2422,16 @@ footer {
   .inspireForm {
     clip-path: polygon(0 0, 97% 5%, 100% 100%, 5% 100%);
     background-color: rgba(20, 48, 31, 0.5);
-    
+    padding: 5rem;
+  }
+
+  .buttonCont {
+    display: flex;
+    justify-content: center;
+  }
+
+  .formButton {
+    max-width: 200px;
   }
 
   .input-group {

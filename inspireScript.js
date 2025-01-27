@@ -41,7 +41,7 @@ function sendMail() { document.getElementById('contactForm').addEventListener('s
      const subject = `RING A DING: You've got site mail!`;
      const email = document.getElementById('email').value;
      const message = document.getElementById('message').value;
-     const emailContent = `Name: ${name}\nFamily:${famName}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+     const emailContent = `Name: ${name}\nFamily:${famName}\nEmail: ${email}\n\nStory Premise: ${message}`;
      const mailtoLink = `mailto:drgoosebooks@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailContent)}`;
      window.location.href = mailtoLink; 
      console.log(emailContent);
