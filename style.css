@@ -97,9 +97,15 @@ p {
 /*  BUTTONS  */
 .button1 {
   border-radius: 50px;
-  padding: 2rem;
+  padding: 1.5rem;
   transition: 0.5s;
   background: rgb(255, 210, 112);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+  
 }
 
 .button1:hover{
@@ -116,7 +122,16 @@ p {
    /* -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); */
 }
 
+/* .button1::after {
+  content: "→";
+  font-size: 2rem;
+  transition: 0.25s ease-in-out ;
+  color: #14301f;
+}
 
+.button1::after:hover {
+  transform: rotate(360deg) translate3d(12px, 0, 3em);
+} */
 
 .button1 h2 {
   font-family: 'Rusty', sans-serif;
@@ -145,8 +160,16 @@ p {
   width: 250px;
 }
 
+.arrow {
+  font-size: 2rem;
+  transition: 0.25s ease-in-out ;
+  color: #14301f;
+}
 
 
+.arrow:hover {
+  transform: rotate(360deg) translate3d(12px, 0, 3em);
+}
 
 
 /* BUTTONS ENDS */
@@ -193,7 +216,7 @@ p {
 
 .heroMainDiv {
   display: grid;
-
+  margin: 2rem auto;
   align-items: center
 }
 
@@ -2047,7 +2070,7 @@ footer {
   
   .parallax1 {
     background-image: url('/assets/images/bearLG.webp');
-    min-height: 800px;
+    min-height: 500px;
     width: auto;
     background-size: 30%;
   
@@ -2057,13 +2080,13 @@ footer {
   
   .parallax2 {
     background-image: url('/assets/images/owlfamLG.webp');
-    min-height: 800px;
+    min-height: 500px;
     background-size: 50%;
   }
 
   .parallax3 {
     background-image: url('/assets/images/fox1.webp');
-    min-height: 800px;
+    min-height: 500px;
     background-size: 50%;
   }
   
