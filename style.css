@@ -860,23 +860,27 @@ footer {
   .inspireMain {
     display: flex;
     flex-wrap: wrap;
-    padding: 0.75rem;
+    /* padding: 0.75rem; */
     justify-content: center;
     text-align: center;
   }
 
   .inspireForm {
 
-    clip-path: polygon(0 0, 97% 5%, 100% 100%, 5% 100%);
+    /* clip-path: polygon(0 0, 97% 5%, 100% 100%, 5% 100%); */
     background-color: rgba(20, 48, 31, 0.5);
     margin: 0.5rem;
-    padding: 5rem;
+    padding: 1rem 0;
   }
 
   .inspireForm h2 {
     padding: 1rem;
     font-size: 3rem;
     color: white;
+  }
+
+  .inspireCont {
+    width: 100%;
   }
 
   .buttonCont {
