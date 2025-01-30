@@ -1454,6 +1454,11 @@ footer {
     align-items: center;
   }
 
+  .painting {
+    font-size: 2rem;
+
+  }
+
   /* Hamburger */
   .menuText {
     display: none;
