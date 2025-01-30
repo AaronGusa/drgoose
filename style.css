@@ -211,6 +211,11 @@ p {
   100% { clip-path: inset(0 0 0 0); }
 }
 
+.paint {
+  animation: paint 2s ease-in-out forwards;
+
+}
+
 .painting {
   font-size: 2.5rem;
   font-family: 'Rusty', sans-serif;
