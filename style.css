@@ -492,9 +492,11 @@ footer {
 
   nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width:100%;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
   }
 
   a {
@@ -502,6 +504,94 @@ footer {
     font-size: clamp(8px, 4vw, 20px);
     cursor: pointer;
   }
+
+  /* Hamburger */
+  .mainMenu {
+    display: none;
+  }
+
+/*
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .hamburger span {
+    height: 4px;
+    width: 100%;
+    opacity: 1;
+    background-color: #14301f;
+  }
+
+  .hamburger span:nth-child(0) {
+    position: relative;
+    width: 100%;
+  }
+
+  .hamburger span:nth-child(1) {
+    position: relative;
+    width: 100%;
+  }
+
+  .hamburger span:nth-child(2) {
+    position: relative;
+    width: 100%;
+  }
+
+
+  .hamburgerOverlay {
+    display: none;
+  } */
+
+  .hamburgerOverlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+    font-family: 'Rusty', sans-serif;
+}
+
+.hamburgerOverlay .hamOverlay {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.hamburgerOverlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.hamburgerOverlay a:hover {
+    color: #f1f1f1;
+}
+
+.hamburgerOverlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
 
   /* Header Nav Alphabetically Ordered */
 
@@ -553,7 +643,6 @@ footer {
     text-align: center;
     margin: 0;
     padding: 0;
-    
   }
 
 
@@ -567,7 +656,7 @@ footer {
   }
 
   .headTitle2 {
-    font-size: clamp(50px, 3rem, 150px);
+    font-size: clamp(28px, 1rem, 150px);
     width: 100%;
     position: relative;
   }
@@ -581,7 +670,7 @@ footer {
   }
 
   .logoCont {
-    display: flex;
+    display: grid;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -614,8 +703,43 @@ footer {
   }
 
   .navImg {
-    width: clamp(25px, 20vw, 150px);
+    width: 82px;
   }
+
+  .menuText {
+    position: relative;
+  
+  margin: 0 auto;
+  font-size: 1rem;
+  }
+
+  .menuText span {
+    position: absolute;
+    bottom: -31px;
+    /* left: 50%;
+    width: 20px;
+    height: 25px;
+    margin-left: -35px; */
+    line-height: 91px; /* height*2 - font-size */
+    /* text-align: center; */
+    transform-origin: top center;
+    font-family: 'Comfortaa', sans-serif;
+
+  }
+
+  .menuText span:nth-of-type(1)  {
+    transform: rotate(-25deg);
+  }
+  .menuText span:nth-of-type(2)  {
+    transform: rotate(-50deg);
+  }
+  .menuText span:nth-of-type(3)  {
+    transform: rotate(-68deg);
+  }
+  .menuText span:nth-of-type(4)  {
+    transform: rotate(-87deg);
+  }
+
 
   .subHead {
     font-size: clamp(10px, 8vw, 50px);
@@ -988,6 +1112,8 @@ footer {
     height: 100%;
   }
 
+
+  
   .navTable, .navTableUl { 
     display: flex;
     flex-direction: row;
@@ -1366,6 +1492,16 @@ footer {
     padding: .5rem 0;
     align-items: center;
   }
+
+  /* Hamburger */
+  .mainMenu {
+    /* display: none; */
+  }
+
+  .hamburger {
+    display: none;
+  }
+
 
   .hero {
     grid-template-rows: 1fr;
@@ -2086,6 +2222,11 @@ footer {
     max-width: 1024px;
     margin: 0 auto;
   }
+
+  .hamburger {
+    display: none;
+  }
+
 
   .bookBoxWdth {
     max-width: 1550px;

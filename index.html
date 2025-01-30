@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/drgoose.ico">
     <title>Dr. Goose Coming Soon</title>
     <script src="/letterScript.js" defer></script>
+    <script src="/mobScript.js" defer></script>
 </head>
 
 <body>
@@ -18,9 +19,9 @@
                     <!-- <svg class="headTitle" width="500" height="100" xmlns="http://www.w3.org/2000/svg">
                         <text x="50" y="80" class="painting headTitle">Dr. Goose</text>
                       </svg> -->
-                    <h2 class="headTitle2">Family Author</h2>
+                    <h2 class="headTitle2 painting">Family Author</h2>
             </div>
-            <div class="navTable">
+            <div class="navTable mainMenu">
                 <ul class="navTableUl">
                     <li><a class="inactivePage" href="/index.html">Home</a></li>
                     <!-- <li ><a class="activePage" href="/landingPage.html">Landing</a></li> -->
@@ -29,11 +30,36 @@
                     <li><a class="inactivePage" href="/about.html">About</a></li>
                 </ul>
             </div>
-            <div class="logoCont">
+            <div class="hamburgerOverlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="hamOverlay">
+                    <a class="inactivePage" href="/index.html">Home</a>
+                    <a class="inactivePage" href="/books.html">Books</a>
+                    <a class="inactivePage" href="/storyidea.html">Inspire</a>
+                    <a class="inactivePage" href="/about.html">About</a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logoCont" id="logoButton">
+                <a href="javascript:void(0)">
+                    <img class="navImg" src="/assets/images/small/DoctorGooseLogo.webp" alt="logo">
+                </a>
+                <div class="menuText">
+                    <span>M</span>
+                    <span>E</span>
+                    <span>N</span>
+                    <span>U</span>
+                </div>
+            </div>
+            <!-- <div class="logoCont">
                 <a href="/index.html">
                     <img class="navImg" src="/assets/images/small/DoctorGooseLogo.webp" alt="logo">
                 </a>
-            </div>
+            </div> -->
         </nav>
     </header>
     <main class="deskWidth">
