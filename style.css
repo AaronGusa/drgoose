@@ -476,7 +476,7 @@ footer {
 /* MOBILE */
 
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 600px) {
   /* Roots */
   html {
     background-image: url('/assets/images/small/backMobile.webp');
@@ -510,49 +510,6 @@ footer {
     display: none;
   }
 
-/*
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    position: absolute;
-    right: 1rem;
-    top: 0.5rem;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    padding: 10px;
-  }
-
-  .hamburger span {
-    height: 4px;
-    width: 100%;
-    opacity: 1;
-    background-color: #14301f;
-  }
-
-  .hamburger span:nth-child(0) {
-    position: relative;
-    width: 100%;
-  }
-
-  .hamburger span:nth-child(1) {
-    position: relative;
-    width: 100%;
-  }
-
-  .hamburger span:nth-child(2) {
-    position: relative;
-    width: 100%;
-  }
-
-
-  .hamburgerOverlay {
-    display: none;
-  } */
-
   .hamburgerOverlay {
     height: 0;
     width: 100%;
@@ -564,34 +521,61 @@ footer {
     overflow-y: hidden;
     transition: 0.5s;
     font-family: 'Rusty', sans-serif;
-}
+  }
 
-.hamburgerOverlay .hamOverlay {
+  .hamburgerOverlay .hamOverlay {
+      position: absolute;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+  }
+
+  .hamburgerOverlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+  }
+
+  .hamburgerOverlay a:hover {
+      color: #f1f1f1;
+  }
+
+  .hamburgerOverlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+  }
+
+  .menuText {
+    position: relative;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  .menuText span {
     position: absolute;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-}
+    bottom: -31px;
+    line-height: 91px; 
+    transform-origin: top center;
+    font-family: 'Comfortaa', sans-serif;
+  }
 
-.hamburgerOverlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.hamburgerOverlay a:hover {
-    color: #f1f1f1;
-}
-
-.hamburgerOverlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
+  .menuText span:nth-of-type(1)  {
+    transform: rotate(-25deg);
+  }
+  .menuText span:nth-of-type(2)  {
+    transform: rotate(-50deg);
+  }
+  .menuText span:nth-of-type(3)  {
+    transform: rotate(-68deg);
+  }
+  .menuText span:nth-of-type(4)  {
+    transform: rotate(-87deg);
+  }
 
   /* Header Nav Alphabetically Ordered */
 
@@ -705,41 +689,6 @@ footer {
   .navImg {
     width: 82px;
   }
-
-  .menuText {
-    position: relative;
-  
-  margin: 0 auto;
-  font-size: 1rem;
-  }
-
-  .menuText span {
-    position: absolute;
-    bottom: -31px;
-    /* left: 50%;
-    width: 20px;
-    height: 25px;
-    margin-left: -35px; */
-    line-height: 91px; /* height*2 - font-size */
-    /* text-align: center; */
-    transform-origin: top center;
-    font-family: 'Comfortaa', sans-serif;
-
-  }
-
-  .menuText span:nth-of-type(1)  {
-    transform: rotate(-25deg);
-  }
-  .menuText span:nth-of-type(2)  {
-    transform: rotate(-50deg);
-  }
-  .menuText span:nth-of-type(3)  {
-    transform: rotate(-68deg);
-  }
-  .menuText span:nth-of-type(4)  {
-    transform: rotate(-87deg);
-  }
-
 
   .subHead {
     font-size: clamp(10px, 8vw, 50px);
@@ -1058,8 +1007,6 @@ footer {
 
 }
 
-
-
 /* TABLET QUERY */
 @media only screen and (min-width: 600px) {
   html {
@@ -1216,6 +1163,15 @@ footer {
     text-align: center;
 
   }
+
+  .menuText {
+    display: none;
+  }
+
+  .hamburgerOverlay {
+    display: none;
+  }
+
   /* ABOUT PAGE */
 
   .AboutMain {
@@ -1494,14 +1450,13 @@ footer {
   }
 
   /* Hamburger */
-  .mainMenu {
-    /* display: none; */
-  }
-
-  .hamburger {
+  .menuText {
     display: none;
   }
 
+  .hamburgerOverlay {
+    display: none;
+  }
 
   .hero {
     grid-template-rows: 1fr;
