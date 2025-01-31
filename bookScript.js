@@ -17,7 +17,7 @@ const books = [
   },
   {
     title: 'The Family Investigation',
-    blurb: `In this heartwarming tale of two sibling turtles. Embark on a journey with them as they navigate the currents
+    blurb: `In this heart-warming tale of two sibling turtles. Embark on a journey with them as they navigate the currents
             of family life. One day, they stumble upon an inspiring document on their wall, 'A Proclamation to the World', which
             outlines the ideals of a perfect family. Curious and eager, they begin to measure their family against these lofty standards.`,
     link: 'https://www.amazon.com/dp/B0DVMLG7GZ',
@@ -29,7 +29,7 @@ const books = [
     title: 'The Bad Idea',
     blurb: `Discover how ideas shape our experiences and perceptions through this adventure with sister Fox. Join her journey
             as she realizes how a  bad idea can affect her interactions with her family and how a simple good idea can rescue her
-            her from the entangling effects of poor choices.`,
+            from the entangling effects of poor choices.`,
     link: 'https://www.amazon.com/dp/B0DVM7S6PS',
     pic: '/assets/images/bookcovers/TheBadIdea.png',
     release: 'January 31, 2025'
