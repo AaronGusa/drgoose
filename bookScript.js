@@ -10,9 +10,9 @@ const books = [
               Join our furry friend on an enchanting journey of self-discovery. As he searches for answers, he turns 
               to his wise and loving parents. Together, they help him understand that he is more than just a bear - He is
               a cherished child of God.`,
-    link: 'Coming TBD',
+    link: 'https://www.amazon.com/dp/B0DVM3J2WT',
     pic: '/assets/images/bookcovers/WhatAmIReally.png',
-    release: 'February 3, 2025'
+    release: 'January 31, 2025'
 
   },
   {
@@ -20,9 +20,9 @@ const books = [
     blurb: `In this heartwarming tale of two sibling turtles. Embark on a journey with them as they navigate the currents
             of family life. One day, they stumble upon an inspiring document on their wall, 'A Proclamation to the World', which
             outlines the ideals of a perfect family. Curious and eager, they begin to measure their family against these lofty standards.`,
-    link: 'Coming TBD',
+    link: 'https://www.amazon.com/dp/B0DVMLG7GZ',
     pic: '/assets/images/bookcovers/TheFamInvestigation.png',
-    release: 'February 3, 2025'
+    release: 'January 31, 2025'
 
   },
   {
@@ -30,9 +30,9 @@ const books = [
     blurb: `Discover how ideas shape our experiences and perceptions through this adventure with sister Fox. Join her journey
             as she realizes how a  bad idea can affect her interactions with her family and how a simple good idea can rescue her
             her from the entangling effects of poor choices.`,
-    link: 'Coming TBD',
+    link: 'https://www.amazon.com/dp/B0DVM7S6PS',
     pic: '/assets/images/bookcovers/TheBadIdea.png',
-    release: 'February 3, 2025'
+    release: 'January 31, 2025'
 
   },
   {
@@ -70,7 +70,7 @@ books.forEach(book => {
   if (book.link != 'Coming TBD') { 
     link = `<div class="buttonCont"><a class="bookLink" href="${book.link}"><button class="button1 bookButtonFont">Buy ${book.title}</button></a></div>`;
   } else {
-    link = `<div class="bookAvailCont"><h1 class="bookAvail">Available<br>${book.release}</h1></div>`;
+    link = `<div class="bookAvailCont"><h1 class="bookAvail">Coming<br>${book.release}</h1></div>`;
   };
 
   const bookDiv = document.createElement('div');
