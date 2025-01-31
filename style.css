@@ -844,8 +844,6 @@ footer {
   .book0 h2, .book2 h2, .book4 h2, .book1 h2, .book3 h2, .book5 h2 {
     padding: 1rem 0.5rem;
     font-size: clamp(1.8rem, calc(5vw + 1rem), 3rem);
-
-
   } 
 
   .book0 h2, .book2 h2, .book4 h2 {
@@ -1271,7 +1269,7 @@ footer {
   .book0 h2, .book2 h2, .book4 h2, .book1 h2, .book3 h2, .book5 h2 {
     padding: 1rem 0.5rem;
     font-size: clamp(1.8rem, calc(5vw + 1rem), 3rem);
-    width: 100%;
+    /* width: 100%; */
 
   } 
 

@@ -37,7 +37,7 @@ const books = [
     blurb: `Dive into an enchanting telling of three curious owl siblings. When their father brings home surprise toy bags, they 
             start to wonder if their pregnant mother is anything like blind bags. Could she be carrying a fairy princess? Maybe a 
             playful puppy? Or perhaps even a bunch of chicken nuggets? `,
-    link: 'Coming TBD',
+    link: 'https://www.amazon.com/dp/B0DVJ99W4N',
     pic: '/assets/images/bookcovers/WhatIsOurBaby.png',
     release: 'January 31, 2025'
   },
@@ -65,7 +65,7 @@ let i = 0;
 books.forEach(book => {
   let link;
   if (book.link != 'Coming TBD') { 
-    link = '<button class="bookButton"><a class="bookLink" href="#">${book.link}</a></button>';
+    link = `<div class="buttonCont"><a class="bookLink" href="${book.link}"><button class="button1">Buy ${book.title}</button></a></div>`;
   } else {
     link = `<div class="bookAvailCont"><h1 class="bookAvail">Available<br>${book.release}</h1></div>`;
   };
@@ -79,8 +79,10 @@ books.forEach(book => {
         </div>
         <div class=bookWordCont>
           <h2 class="bookH">${book.title}</h2> 
-          <p class="bookP">${book.blurb}</p> 
-          ${link}
+          <div class="bookP">
+            <p>${book.blurb}</p> 
+            ${link}
+          </div>
         </div> 
     </div>  
     <br>
@@ -88,3 +90,4 @@ books.forEach(book => {
   bookContainer.appendChild(bookDiv);
   i++;
 });
+
