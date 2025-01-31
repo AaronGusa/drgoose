@@ -12,7 +12,8 @@ const books = [
               a cherished child of God.`,
     link: 'Coming TBD',
     pic: '/assets/images/bookcovers/WhatAmIReally.png',
-    release: 'January 31, 2025'
+    release: 'February 3, 2025'
+
   },
   {
     title: 'The Family Investigation',
@@ -21,7 +22,8 @@ const books = [
             outlines the ideals of a perfect family. Curious and eager, they begin to measure their family against these lofty standards.`,
     link: 'Coming TBD',
     pic: '/assets/images/bookcovers/TheFamInvestigation.png',
-    release: 'January 31, 2025'
+    release: 'February 3, 2025'
+
   },
   {
     title: 'The Bad Idea',
@@ -30,7 +32,8 @@ const books = [
             her from the entangling effects of poor choices.`,
     link: 'Coming TBD',
     pic: '/assets/images/bookcovers/TheBadIdea.png',
-    release: 'January 31, 2025'
+    release: 'February 3, 2025'
+
   },
   {
     title: 'What is Our Baby?',
@@ -39,7 +42,7 @@ const books = [
             playful puppy? Or perhaps even a bunch of chicken nuggets? `,
     link: 'https://www.amazon.com/dp/B0DVJ99W4N',
     pic: '/assets/images/bookcovers/WhatIsOurBaby.png',
-    release: 'January 31, 2025'
+    release: 'January 29, 2025'
   },
   {
     title: 'Mothers',
@@ -65,7 +68,7 @@ let i = 0;
 books.forEach(book => {
   let link;
   if (book.link != 'Coming TBD') { 
-    link = `<div class="buttonCont"><a class="bookLink" href="${book.link}"><button class="button1">Buy ${book.title}</button></a></div>`;
+    link = `<div class="buttonCont"><a class="bookLink" href="${book.link}"><button class="button1 bookButtonFont">Buy ${book.title}</button></a></div>`;
   } else {
     link = `<div class="bookAvailCont"><h1 class="bookAvail">Available<br>${book.release}</h1></div>`;
   };
