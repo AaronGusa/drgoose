@@ -68,7 +68,7 @@ let i = 0;
 books.forEach(book => {
   let link;
   if (book.link != 'Coming TBD') { 
-    link = `<div class="buttonCont"><a class="bookLink" href="${book.link}"><button class="button1 bookButtonFont">Buy ${book.title}</button></a></div>`;
+    link = `<div class="buttonCont"><a class="bookLink" href="${book.link}"><button class="button1 bookButtonFont"><span style="font-family: 'Comfortaa', sans-serif;">Invest in </span> ${"\n " + book.title}</button></a></div>`;
   } else {
     link = `<div class="bookAvailCont"><h1 class="bookAvail">Coming<br>${book.release}</h1></div>`;
   };

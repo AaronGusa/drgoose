@@ -472,7 +472,8 @@ footer {
 
 .bookButtonFont {
   font-family: 'Rusty', sans-serif;
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+  display: grid;
 }
 
 /* 
